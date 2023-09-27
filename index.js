@@ -13,4 +13,4 @@ app.use(express.json())
 app.use('/upload',uploadRoute)
 
 const PORT = process.env.PORT
-app.listen(PORT, () => console.log( `App is running on PORT:${PORT}`))
+app.listen(PORT || 5000, () => console.log( `App is running on PORT:${PORT}`))
